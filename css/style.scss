@@ -4,3 +4,50 @@
     padding: 0;
     border: brown solid 1px;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+%flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$bleuFonce: #34495e;
+
+header,
+.logo,
+.nav {
+    height: 5rem;
+    @extend %flex-centered;
+}
+
+.banniere {
+    height: 40vh;
+}
+
+.about {
+    height: 30vh;
+}
+
+.play {
+    height: 30vh;
+}
+
+.news {
+    height: 30vh;
+}
+
+.number {
+    height: 30vh;
+}
+
+.maps {
+    height: 30vh;
+}
+
+.footer {
+    height: 60px;
+}

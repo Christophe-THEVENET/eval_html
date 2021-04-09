@@ -3,5 +3,58 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: brown solid 1px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header,
+.logo,
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header,
+.logo,
+.nav {
+  height: 5rem;
+}
+
+.banniere {
+  height: 40vh;
+}
+
+.about {
+  height: 30vh;
+}
+
+.play {
+  height: 30vh;
+}
+
+.news {
+  height: 30vh;
+}
+
+.number {
+  height: 30vh;
+}
+
+.maps {
+  height: 30vh;
+}
+
+.footer {
+  height: 60px;
 }
 /*# sourceMappingURL=style.css.map */
