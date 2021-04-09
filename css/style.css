@@ -10,7 +10,6 @@ html {
   font-size: 62.5%;
 }
 
-header,
 .logo,
 .nav {
   display: -webkit-box;
@@ -24,7 +23,6 @@ header,
           justify-content: center;
 }
 
-header,
 .logo,
 .nav {
   height: 5rem;
