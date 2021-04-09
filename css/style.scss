@@ -17,11 +17,21 @@ html {
 
 $bleuFonce: #34495e;
 
+// ..............HEADER..............
+
 header,
 .logo,
 .nav {
     height: 5rem;
     @extend %flex-centered;
+}
+
+.logo__svg {
+    width: 7rem;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top: 3rem;
 }
 
 .banniere {
@@ -41,10 +51,6 @@ header,
 }
 
 .number {
-    height: 30vh;
-}
-
-.maps {
     height: 30vh;
 }
 

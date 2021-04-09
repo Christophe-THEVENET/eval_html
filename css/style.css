@@ -30,6 +30,14 @@ header,
   height: 5rem;
 }
 
+.logo__svg {
+  width: 7rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-top: 3rem;
+}
+
 .banniere {
   height: 40vh;
 }
@@ -47,10 +55,6 @@ header,
 }
 
 .number {
-  height: 30vh;
-}
-
-.maps {
   height: 30vh;
 }
 
