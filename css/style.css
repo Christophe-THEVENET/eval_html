@@ -1,14 +1,24 @@
+/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: brown solid 1px;
+}*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: brown solid 1px;
-}
-
-html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+}
+
+.banniere, .banniere .banniere__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
@@ -21,25 +31,66 @@ header {
 
 .logo #logo__img {
   position: absolute;
-  width: 8rem;
-  top: -0.5rem;
+  width: 9rem;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.nav {
+  padding: 0px;
 }
 
 .nav .navbar-nav {
   margin-left: 40%;
 }
 
+.nav .navbar-toggler {
+  padding: 0;
+  background-color: rgba(50, 72, 131, 0.13);
+}
+
 .nav .navbar-collapse {
-  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
+.nav .nav__icon {
+  color: red;
 }
 
 .nav .nav-link {
-  color: #17307b;
-  font-size: 1.5rem;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.nav .nav-link:hover {
+  background-color: rgba(243, 243, 243, 0.288);
 }
 
 .banniere {
-  height: 40vh;
+  height: 50vh;
+  background-image: url(../img/banniere.jpg);
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banniere .banniere__heading {
+  height: 50%;
+  width: 70%;
+  margin-top: 10%;
+  background-color: rgba(255, 255, 255, 0.514);
+  border-radius: 2%;
+  font-size: 3.2vmax;
+  font-weight: bold;
+  text-align: center;
+  color: #1f2c50;
+  text-shadow: 1px 1px 2px #ffffff85;
 }
 
 .about {

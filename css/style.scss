@@ -1,11 +1,11 @@
-* {
+/** {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: brown solid 1px;
-}
+}*/
 
-html {
+* {
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
 }
@@ -16,7 +16,8 @@ html {
     justify-content: center;
 }
 
-$bleuFonce: #17307b;
+$bleuFonce: #1f2c50;
+$title-shadow: 1px 1px 2px #ffffff85;
 
 // ..............HEADER..............
 
@@ -27,30 +28,63 @@ header {
     position: relative;
     #logo__img {
         position: absolute;
-        width: 8rem;
-        top: -0.5rem;
+        width: 9rem;
+        left: 0;
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 1rem;
     }
 }
 
 // .................NAV............
 
 .nav {
+    padding: 0px;
     .navbar-nav {
         margin-left: 40%;
     }
+    .navbar-toggler {
+        padding: 0;
+        background-color: rgba(50, 72, 131, 0.13);
+    }
     .navbar-collapse {
-        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+    .nav__icon {
+        color: red;
     }
     .nav-link {
-        color: $bleuFonce;
-        font-size: 1.5rem;
+        color: white;
+        font-size: 1.6rem;
+        text-align: center;
+        &:hover {
+            background-color: rgba(243, 243, 243, 0.288);
+        }
     }
 }
 
 // --------------------------------
 
 .banniere {
-    height: 40vh;
+    height: 50vh;
+    background-image: url(../img/banniere.jpg);
+    background-size: cover;
+    @extend %flex-centered;
+    flex-direction: column;
+    .banniere__heading {
+        height: 50%;
+        width: 70%;
+        margin-top: 10%;
+        background-color: rgba(255, 255, 255, 0.514);
+        border-radius: 2%;
+        font-size: 3.2vmax;
+        font-weight: bold;
+        text-align: center;
+        color: $bleuFonce;
+        @extend %flex-centered;
+        text-shadow: $title-shadow;
+    }
 }
 
 .about {
