@@ -18,31 +18,18 @@ header {
   position: relative;
 }
 
-.logo__svg {
+#logo__img {
   width: 8rem;
-  background-color: #ffffff;
-  padding: 1rem;
   position: absolute;
-  border-radius: 50%;
-  left: 0;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.nav {
+  padding: 0;
+  margin: 0;
 }
 
-.btn {
-  height: 100%;
-}
-
-.bi-list {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+.nav .nav__icon {
+  width: 100px;
 }
 
 .banniere {
