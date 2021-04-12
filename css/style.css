@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -18,18 +19,23 @@ header {
   position: relative;
 }
 
-#logo__img {
-  width: 8rem;
+.logo #logo__img {
   position: absolute;
+  width: 8rem;
+  top: -0.5rem;
 }
 
-.nav {
-  padding: 0;
-  margin: 0;
+.nav .navbar-nav {
+  margin-left: 40%;
 }
 
-.nav .nav__icon {
-  width: 100px;
+.nav .navbar-collapse {
+  margin-top: 2rem;
+}
+
+.nav .nav-link {
+  color: #17307b;
+  font-size: 1.5rem;
 }
 
 .banniere {

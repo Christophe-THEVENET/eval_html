@@ -7,6 +7,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
 }
 
 %flex-centered {
@@ -15,7 +16,7 @@ html {
     justify-content: center;
 }
 
-$bleuFonce: #34495e;
+$bleuFonce: #17307b;
 
 // ..............HEADER..............
 
@@ -24,19 +25,25 @@ header {
 }
 .logo {
     position: relative;
-}
-#logo__img {
-    width: 8rem;
-    position: absolute;
+    #logo__img {
+        position: absolute;
+        width: 8rem;
+        top: -0.5rem;
+    }
 }
 
 // .................NAV............
 
 .nav {
-    padding: 0;
-    margin: 0;
-    .nav__icon {
-        width: 100px;
+    .navbar-nav {
+        margin-left: 40%;
+    }
+    .navbar-collapse {
+        margin-top: 2rem;
+    }
+    .nav-link {
+        color: $bleuFonce;
+        font-size: 1.5rem;
     }
 }
 
