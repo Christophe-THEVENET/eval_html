@@ -10,30 +10,39 @@ html {
   font-size: 62.5%;
 }
 
-.logo,
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.logo,
-.nav {
+header {
   height: 5rem;
 }
 
+.logo {
+  position: relative;
+}
+
 .logo__svg {
-  width: 7rem;
+  width: 8rem;
   background-color: #ffffff;
-  padding: 0.5rem;
+  padding: 1rem;
+  position: absolute;
   border-radius: 50%;
-  margin-top: 3rem;
+  left: 0;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn {
+  height: 100%;
+}
+
+.bi-list {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .banniere {

@@ -19,18 +19,25 @@ $bleuFonce: #34495e;
 
 // ..............HEADER..............
 
-.logo,
-.nav {
+header {
     height: 5rem;
-    @extend %flex-centered;
 }
 
-.logo__svg {
-    width: 7rem;
-    background-color: #ffffff;
-    padding: 0.5rem;
-    border-radius: 50%;
-    margin-top: 3rem;
+.btn {
+    height: 100%;
+}
+
+.bi-list {
+    transform: scale(2);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 500px;
 }
 
 .banniere {
