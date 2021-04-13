@@ -80,8 +80,8 @@ header {
         height: 50%;
         width: 70%;
         margin-top: 10%;
-        background-color: rgba(255, 255, 255, 0.514);
-        border-radius: 2%;
+        background-color: rgba(255, 255, 255, 0.788);
+        border-radius: 1rem;
         font-size: 3.2vmax;
         font-weight: bold;
         text-align: center;
@@ -92,7 +92,38 @@ header {
 }
 
 .about {
-    height: 30vh;
+    height: auto;
+    padding: 5rem;
+    background-color: #ffffff;
+    @extend %flex-centered;
+    .about__img {
+        background-image: url("../img/20-ans-3.jpg");
+        background-size: cover;
+        width: 40rem;
+        height: 30rem;
+        margin-bottom: 10rem;
+        position: relative;
+        @extend %flex-centered;
+        z-index: 2;
+    }
+    .about__heading {
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        background-color: #1f2c50e5;
+        color: #ffffff;
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .about__paragraph {
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-align: justify;
+        color: $bleuFonce;
+    }
 }
 
 .play {
