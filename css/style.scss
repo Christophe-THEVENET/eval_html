@@ -54,6 +54,7 @@
 }
 
 $bleuFonce: #1f2c50;
+$yellow: #fbbb10;
 $title-shadow: 1px 1px 2px #ffffff85;
 
 // ..............HEADER..............
@@ -266,7 +267,9 @@ header {
 // ********
 
 .number {
-    height: 30vh;
+    height: 70vh;
+    background-color: darken($yellow, $amount: 5%);
+    opacity: 0.95;
 }
 
 .footer {

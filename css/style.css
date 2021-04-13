@@ -277,7 +277,9 @@ header {
 }
 
 .number {
-  height: 30vh;
+  height: 70vh;
+  background-color: #eeae04;
+  opacity: 0.95;
 }
 
 .footer {
