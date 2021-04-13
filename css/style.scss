@@ -16,6 +16,23 @@
     justify-content: center;
 }
 
+@mixin heading_white {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    width: 20rem;
+    margin: auto;
+}
+
+@mixin round_icons {
+    padding: 2rem;
+    display: block;
+    margin: auto;
+}
+
 $bleuFonce: #1f2c50;
 $title-shadow: 1px 1px 2px #ffffff85;
 
@@ -103,6 +120,8 @@ header {
     }
 }
 
+// .................ABOUT.................
+
 .about {
     height: auto;
     padding: 5rem;
@@ -146,7 +165,8 @@ header {
         font-weight: bold;
         border-radius: 0.8rem;
         color: $bleuFonce;
-        border-color: $bleuFonce;
+        border: 1px solid $bleuFonce;
+
         &:hover {
             color: white;
             background-color: $bleuFonce;
@@ -154,8 +174,27 @@ header {
     }
 }
 
+// ..............PLAY....................
+
 .play {
-    height: 30vh;
+    // height: 30vmin;
+    background-color: darken($bleuFonce, $amount: 5%);
+    opacity: 0.99;
+
+    .play__heading {
+        color: #ffffff;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 5rem;
+        text-transform: uppercase;
+    }
+    h3 {
+        @include heading_white();
+    }
+    .play__icons {
+        @include round_icons();
+    }
 }
 
 .news {

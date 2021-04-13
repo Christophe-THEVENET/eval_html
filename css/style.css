@@ -152,7 +152,7 @@ header {
   font-weight: bold;
   border-radius: 0.8rem;
   color: #1f2c50;
-  border-color: #1f2c50;
+  border: 1px solid #1f2c50;
 }
 
 .about .about__button:hover {
@@ -161,7 +161,34 @@ header {
 }
 
 .play {
-  height: 30vh;
+  background-color: #18223e;
+  opacity: 0.99;
+}
+
+.play .play__heading {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 5rem;
+  text-transform: uppercase;
+}
+
+.play h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  width: 20rem;
+  margin: auto;
+}
+
+.play .play__icons {
+  padding: 2rem;
+  display: block;
+  margin: auto;
 }
 
 .news {
