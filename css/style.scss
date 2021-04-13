@@ -1,10 +1,9 @@
-/** {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: brown solid 1px;
 }
-*/
+
 * {
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
@@ -269,7 +268,12 @@ header {
 .number {
     height: 70vh;
     background-color: darken($yellow, $amount: 5%);
-    opacity: 0.95;
+    @extend %flex-centered;
+    opacity: 0.9;
+    .number__heading {
+        @include heading__section($bleuFonce);
+        padding-top: 5rem;
+    }
 }
 
 .footer {

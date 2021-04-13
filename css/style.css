@@ -1,16 +1,16 @@
-/** {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: brown solid 1px;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-*/
+
 * {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
 }
 
-.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .news .card {
+.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .news .card, .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +279,17 @@ header {
 .number {
   height: 70vh;
   background-color: #eeae04;
-  opacity: 0.95;
+  opacity: 0.9;
+}
+
+.number .number__heading {
+  color: #1f2c50;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 5rem;
+  text-transform: uppercase;
+  padding-top: 5rem;
 }
 
 .footer {
