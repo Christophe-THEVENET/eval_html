@@ -65,6 +65,7 @@ header {
 .nav .nav-link {
   color: white;
   font-size: 1.8rem;
+  border-radius: 0.3rem;
   font-weight: bold;
   text-align: center;
 }
@@ -120,9 +121,11 @@ header {
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: bold;
+  line-height: 3rem;
   text-transform: uppercase;
-  padding: 2rem 1rem;
+  padding: 1rem;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 
 .about .about__paragraph {
@@ -130,6 +133,22 @@ header {
   padding: 1rem;
   text-align: justify;
   color: #1f2c50;
+}
+
+.about .about__button {
+  width: 25rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  color: #1f2c50;
+  border-color: #1f2c50;
+}
+
+.about .about__button:hover {
+  color: white;
+  background-color: #1f2c50;
 }
 
 .play {
