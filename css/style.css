@@ -5,10 +5,9 @@
   padding: 0;
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
-  border: red 1px solid;
 }
 
-.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .news .card, .number, .number .number__block, .footer .footer__block {
+.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .number, .number .number__block, .footer .footer__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +17,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#myVideo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
 }
 
 header {
@@ -48,27 +56,18 @@ header {
 }
 
 .nav .nav-link {
-  color: white;
+  color: #1f2c50;
   font-size: 1.5rem;
   border-radius: 0.3rem;
-  background-color: #1f2c50;
+  background-color: white;
   margin: 0.1rem;
   font-weight: bold;
   text-align: center;
 }
 
 .nav .nav-link:hover {
-  background-color: white;
+  background-color: #fbbb10;
   color: #1f2c50;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -10;
 }
 
 .banniere {
@@ -131,12 +130,14 @@ header {
 }
 
 .about .about__button {
-  width: 25rem;
+  width: 20rem;
   margin-top: 2rem;
-  padding: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 0.8rem;
+  margin: 2rem auto;
   color: #1f2c50;
   border: 1px solid #1f2c50;
 }
@@ -148,7 +149,7 @@ header {
 
 .play {
   background-color: #18223e;
-  opacity: 0.97;
+  opacity: 0.95;
   min-height: 55vh;
   padding-bottom: 5rem;
 }
@@ -205,12 +206,11 @@ header {
   color: #1f2c50;
   font-size: 1.8rem;
   font-weight: bold;
-  padding-left: 2rem;
 }
 
 .news .card {
   padding: 0;
-  margin: 5rem;
+  margin: 3rem;
   width: 30rem;
   height: 70rem;
   -webkit-box-shadow: 0px 0px 10px -2px #9c9c9c;
@@ -243,15 +243,16 @@ header {
 }
 
 .news .card__button {
-  width: 25rem;
+  width: 20rem;
   margin-top: 2rem;
-  padding: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 0.8rem;
+  margin: 2rem auto;
   color: #1f2c50;
   border: 1px solid #1f2c50;
-  margin-bottom: 2rem;
 }
 
 .news .card__button:hover {
@@ -263,7 +264,7 @@ header {
   min-height: 55vh;
   background-color: #eeae04;
   opacity: 0.95;
-  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
 .number .number__heading {
@@ -273,7 +274,6 @@ header {
   text-align: center;
   padding: 5rem;
   text-transform: uppercase;
-  padding-bottom: 8rem;
 }
 
 .number .number__block {
@@ -285,12 +285,12 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 0.5rem;
-  height: 50rem;
+  height: 45rem;
 }
 
 .number .number__block .number__icons {
-  height: 12rem;
-  width: 15rem;
+  height: 10rem;
+  width: 10rem;
   -webkit-transition: all 1s ease-in-out 0s;
   transition: all 1s ease-in-out 0s;
 }
@@ -307,14 +307,13 @@ header {
   text-align: center;
   padding: 5rem;
   text-transform: uppercase;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .number .number__block .number__paragraph {
   color: #1f2c50;
   font-size: 1.5rem;
   text-align: center;
-  padding: 1rem 2rem;
   font-weight: bold;
 }
 
@@ -327,8 +326,12 @@ header {
   padding: 2rem;
 }
 
+.footer .footer__block .footer__block__img {
+  width: 25rem;
+}
+
 .footer .footer__block .footer__block__heading {
-  color: #fbbb10;
+  color: #1f2c50;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
@@ -337,7 +340,7 @@ header {
 }
 
 .footer .footer__block .footer__block__paragraph {
-  color: #fbbb10;
+  color: #1f2c50;
   font-size: 1.5rem;
   text-align: justify;
   padding: 1rem 2rem;

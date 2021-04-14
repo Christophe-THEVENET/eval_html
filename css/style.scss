@@ -4,7 +4,7 @@
     padding: 0;
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
-    border: red 1px solid;
+    // border: red 1px solid;
 }
 
 // .....CENTRER ELEMENTS.......
@@ -42,12 +42,14 @@
 // ...........BOUTONS............
 
 @mixin button {
-    width: 25rem;
+    width: 20rem;
     margin-top: 2rem;
-    padding: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 0.8rem;
+    margin: 2rem auto;
     color: $bleuFonce;
     border: 1px solid $bleuFonce;
     &:hover {
@@ -62,6 +64,17 @@ $bleuFonce: #1f2c50;
 $orange: rgb(228, 97, 36);
 $yellow: #fbbb10;
 $title-shadow: 1px 1px 2px #ffffff85;
+
+// ........BACKGROUND VIDEO FULL SITE.......
+
+#myVideo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
 
 // ..............HEADER....................................
 
@@ -92,29 +105,19 @@ header {
         padding-top: 1rem;
     }
     .nav-link {
-        color: white;
+        color: $bleuFonce;
         font-size: 1.5rem;
         border-radius: 0.3rem;
-        background-color: $bleuFonce;
+        background-color: white;
         margin: 0.1rem;
         font-weight: bold;
         text-align: center;
+
         &:hover {
-            background-color: rgb(255, 255, 255);
+            background-color: $yellow;
             color: $bleuFonce;
         }
     }
-}
-
-// ........BACKGROUND VIDEO FULL SITE.......
-
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -10;
 }
 
 // ................BANNIERE..............................
@@ -184,7 +187,7 @@ header {
 
 .play {
     background-color: darken($bleuFonce, $amount: 5%);
-    opacity: 0.97;
+    opacity: 0.95;
     min-height: 55vh;
     padding-bottom: 5rem;
     .play__heading {
@@ -213,12 +216,13 @@ header {
         color: $bleuFonce;
         font-size: 1.8rem;
         font-weight: bold;
-        padding-left: 2rem;
     }
+
+    // ......CARD.............
+
     .card {
         padding: 0;
-        margin: 5rem;
-        @extend %flex-centered;
+        margin: 3rem;
         width: 30rem;
         height: 70rem;
         box-shadow: 0px 0px 10px -2px rgb(156, 156, 156);
@@ -242,7 +246,6 @@ header {
     }
     .card__button {
         @include button();
-        margin-bottom: 2rem;
     }
 }
 
@@ -253,20 +256,19 @@ header {
     background-color: darken($yellow, $amount: 5%);
     @extend %flex-centered;
     opacity: 0.95;
-    padding-top: 5rem;
+    padding-bottom: 3rem;
     .number__heading {
         @include heading__section($bleuFonce, 3.5rem);
-        padding-bottom: 8rem;
     }
     .number__block {
         @extend %flex-centered;
         flex-direction: column;
         justify-content: flex-start;
         margin: 0.5rem;
-        height: 50rem;
+        height: 45rem;
         .number__icons {
-            height: 12rem;
-            width: 15rem;
+            height: 10rem;
+            width: 10rem;
             transition: all 1s ease-in-out 0s;
             &:hover {
                 transform: scale(1.2);
@@ -274,13 +276,12 @@ header {
         }
         .number__title {
             @include heading__section($bleuFonce, 3rem);
-            padding: 4rem;
+            padding: 2rem;
         }
         .number__paragraph {
             color: $bleuFonce;
             font-size: 1.5rem;
             text-align: center;
-            padding: 1rem 2rem;
             font-weight: bold;
         }
     }
@@ -295,11 +296,14 @@ header {
     .footer__block {
         @extend %flex-centered;
         padding: 2rem;
+        .footer__block__img {
+            width: 25rem;
+        }
         .footer__block__heading {
-            @include heading__section($yellow, 1.5rem);
+            @include heading__section($bleuFonce, 1.5rem);
         }
         .footer__block__paragraph {
-            color: $yellow;
+            color: $bleuFonce;
             font-size: 1.5rem;
             text-align: justify;
             padding: 1rem 2rem;
