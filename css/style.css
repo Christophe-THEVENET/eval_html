@@ -369,4 +369,18 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 8rem;
+  }
+  .logo {
+    position: relative;
+  }
+  .logo #logo__img {
+    position: absolute;
+    width: 13rem;
+    left: -0.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
