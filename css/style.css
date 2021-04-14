@@ -7,7 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .news .card, .number {
+.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .news .card, .number, .number .number__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +163,7 @@ header {
 
 .play .play__heading {
   color: white;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-align: center;
   padding: 5rem;
@@ -201,7 +201,7 @@ header {
 
 .news .news__heading {
   color: #1f2c50;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-align: center;
   padding: 5rem;
@@ -268,19 +268,62 @@ header {
 }
 
 .number {
-  height: 70vh;
+  min-height: 55vh;
   background-color: #eeae04;
-  opacity: 0.9;
+  opacity: 0.93;
+  padding-top: 5rem;
 }
 
 .number .number__heading {
+  color: #1f2c50;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 5rem;
+  text-transform: uppercase;
+  padding-bottom: 8rem;
+}
+
+.number .number__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0.5rem;
+  height: 50rem;
+}
+
+.number .number__block .number__icons {
+  -webkit-transition: all 2s ease-out 0s;
+  transition: all 2s ease-out 0s;
+  height: 12rem;
+  width: 15rem;
+}
+
+.number .number__block .number__icons:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.number .number__block .number__title {
   color: #1f2c50;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   padding: 5rem;
   text-transform: uppercase;
-  padding-top: 5rem;
+  padding: 4rem;
+}
+
+.number .number__block .number__paragraph {
+  color: #1f2c50;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-weight: bold;
 }
 
 .footer {

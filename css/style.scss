@@ -4,6 +4,7 @@
     padding: 0;
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
+    // border: red 1px solid;
 }
 
 // .....CENTRER ELEMENTS.......
@@ -14,7 +15,7 @@
     justify-content: center;
 }
 
-// ..............TITRE...............
+// ..............TITRES...............
 
 @mixin heading__section($color, $font-size) {
     color: $color;
@@ -38,7 +39,7 @@
     }
 }
 
-// ...........BOUTON............
+// ...........BOUTONS............
 
 @mixin button {
     width: 25rem;
@@ -55,14 +56,14 @@
     }
 }
 
-// ........COULEUR..ET OMBRE............
+// ........COULEURS..ET OMBRES............
 
 $bleuFonce: #1f2c50;
 $orange: rgb(228, 97, 36);
 $yellow: #fbbb10;
 $title-shadow: 1px 1px 2px #ffffff85;
 
-// ..............HEADER..............
+// ..............HEADER....................................
 
 header {
     height: 5rem;
@@ -110,7 +111,7 @@ header {
     }
 }
 
-// ...........BACKGROUND VIDEO FULL SITE.........
+// ........BACKGROUND VIDEO FULL SITE.......
 
 #myVideo {
     position: fixed;
@@ -121,7 +122,7 @@ header {
     z-index: -10;
 }
 
-// -------------BANNIERE-------------------
+// ................BANNIERE..............................
 
 .banniere {
     height: 50vh;
@@ -141,7 +142,7 @@ header {
     }
 }
 
-// .................ABOUT.................
+// .................ABOUT..................................
 
 .about {
     padding: 5rem;
@@ -184,7 +185,7 @@ header {
     }
 }
 
-// ..............PLAY....................
+// .................PLAY...................................
 
 .play {
     background-color: darken($bleuFonce, $amount: 5%);
@@ -192,7 +193,7 @@ header {
     min-height: 55vh;
     padding-bottom: 5rem;
     .play__heading {
-        @include heading__section(white, 3rem);
+        @include heading__section(white, 3.5rem);
         margin-top: 3rem;
     }
     h3 {
@@ -203,14 +204,14 @@ header {
     }
 }
 
-// ...............NEWS........................
+// ..................NEWS.................................
 
 .news {
     background-color: #ffffff;
     padding-top: 5rem;
     @extend %flex-centered;
     .news__heading {
-        @include heading__section($bleuFonce, 3rem);
+        @include heading__section($bleuFonce, 3.5rem);
         padding: 2rem;
     }
     .news__link {
@@ -250,20 +251,49 @@ header {
     }
 }
 
-// --------------------------------
-
-// ********
+// ....................NUMBER.............................
 
 .number {
-    height: 70vh;
+    min-height: 55vh;
     background-color: darken($yellow, $amount: 5%);
     @extend %flex-centered;
-    opacity: 0.9;
+    opacity: 0.93;
+    padding-top: 5rem;
     .number__heading {
-        @include heading__section($bleuFonce, 3rem);
-        padding-top: 5rem;
+        @include heading__section($bleuFonce, 3.5rem);
+        padding-bottom: 8rem;
+    }
+    .number__block {
+        @extend %flex-centered;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0.5rem;
+        height: 50rem;
+
+        .number__icons {
+            transition: all 2s ease-out 0s;
+            height: 12rem;
+            width: 15rem;
+
+            &:hover {
+                transform: rotateY(360deg);
+            }
+        }
+        .number__title {
+            @include heading__section($bleuFonce, 3rem);
+            padding: 4rem;
+        }
+        .number__paragraph {
+            color: $bleuFonce;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem 2rem;
+            font-weight: bold;
+        }
     }
 }
+
+// ...................FOOTER...............................
 
 .footer {
     height: 60px;
