@@ -43,7 +43,7 @@
 
 @mixin button {
     width: 25rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -85,20 +85,15 @@ header {
 // .................NAV............
 
 .nav {
-    padding: 0px;
-    .navbar-nav {
-        margin-left: 30%;
-    }
     .navbar-toggler {
         padding: 0;
     }
     .navbar-collapse {
         padding-top: 1rem;
-        padding-right: 2rem;
     }
     .nav-link {
         color: white;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         border-radius: 0.3rem;
         background-color: $bleuFonce;
         margin: 0.1rem;
@@ -125,10 +120,10 @@ header {
 // ................BANNIERE..............................
 
 .banniere {
-    height: 50vh;
+    height: 100vh;
     @extend %flex-centered;
     .banniere__heading {
-        height: 50%;
+        height: 40%;
         width: 70%;
         margin-top: 10%;
         background-color: rgba(255, 255, 255, 0.788);
@@ -152,29 +147,29 @@ header {
     .about__img {
         background-image: url("../img/20-ans-3.jpg");
         background-size: cover;
-        width: 40rem;
-        height: 30rem;
-        margin-bottom: 10rem;
-        position: relative;
+        width: 27rem;
+        padding: 1rem;
+        height: 27rem;
+        margin-bottom: 5rem;
         @extend %flex-centered;
         z-index: 2;
     }
     .about__heading {
-        position: absolute;
-        width: 20rem;
-        height: 20rem;
+        width: 18rem;
+        height: 18rem;
         background-color: #1f2c50e5;
         color: #ffffff;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         font-weight: bold;
-        line-height: 3rem;
+        line-height: 2.5rem;
         text-transform: uppercase;
         padding: 1rem;
         text-align: center;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.2rem;
     }
     .about__paragraph {
         font-size: 1.5rem;
+        width: 120%;
         padding: 1rem;
         max-width: 70rem;
         text-align: justify;
