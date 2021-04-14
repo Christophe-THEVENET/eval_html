@@ -2,12 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-* {
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
 }
+
+// .....CENTRER ELEMENTS.......
 
 %flex-centered {
     display: flex;
@@ -15,31 +14,31 @@
     justify-content: center;
 }
 
-@mixin heading_white {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 1rem;
-    text-transform: uppercase;
-    width: 20rem;
-    margin: auto;
-}
+// ..............TITRE...............
 
-@mixin heading__section($color) {
+@mixin heading__section($color, $font-size) {
     color: $color;
-    font-size: 3rem;
+    font-size: $font-size;
     font-weight: bold;
     text-align: center;
     padding: 5rem;
     text-transform: uppercase;
 }
+
+// .........ICONES ROND.............
+
 @mixin round_icons {
     padding: 2rem;
     display: block;
     margin: auto;
     margin-top: 3rem;
+    transition: all 0.5s ease-in-out 0s;
+    &:hover {
+        transform: scale(1.1) rotate(360deg);
+    }
 }
+
+// ...........BOUTON............
 
 @mixin button {
     width: 25rem;
@@ -50,9 +49,16 @@
     border-radius: 0.8rem;
     color: $bleuFonce;
     border: 1px solid $bleuFonce;
+    &:hover {
+        color: white;
+        background-color: $bleuFonce;
+    }
 }
 
+// ........COULEUR..ET OMBRE............
+
 $bleuFonce: #1f2c50;
+$orange: rgb(228, 97, 36);
 $yellow: #fbbb10;
 $title-shadow: 1px 1px 2px #ffffff85;
 
@@ -84,23 +90,21 @@ header {
     }
     .navbar-toggler {
         padding: 0;
-        background-color: rgba(50, 72, 131, 0.13);
     }
     .navbar-collapse {
         padding-top: 1rem;
         padding-right: 2rem;
     }
-    .nav__icon {
-        color: red;
-    }
     .nav-link {
         color: white;
         font-size: 1.8rem;
         border-radius: 0.3rem;
+        background-color: $bleuFonce;
+        margin: 0.1rem;
         font-weight: bold;
         text-align: center;
         &:hover {
-            background-color: rgb(243, 243, 243);
+            background-color: rgb(255, 255, 255);
             color: $bleuFonce;
         }
     }
@@ -121,10 +125,7 @@ header {
 
 .banniere {
     height: 50vh;
-    // background-image: url(../img/banniere.jpg);
-    background-size: cover;
     @extend %flex-centered;
-    flex-direction: column;
     .banniere__heading {
         height: 50%;
         width: 70%;
@@ -143,10 +144,10 @@ header {
 // .................ABOUT.................
 
 .about {
-    height: auto;
     padding: 5rem;
     background-color: #ffffff;
     @extend %flex-centered;
+    flex-direction: column;
     .about__img {
         background-image: url("../img/20-ans-3.jpg");
         background-size: cover;
@@ -174,15 +175,12 @@ header {
     .about__paragraph {
         font-size: 1.5rem;
         padding: 1rem;
+        max-width: 70rem;
         text-align: justify;
         color: $bleuFonce;
     }
     .about__button {
         @include button();
-        &:hover {
-            color: white;
-            background-color: $bleuFonce;
-        }
     }
 }
 
@@ -191,21 +189,17 @@ header {
 .play {
     background-color: darken($bleuFonce, $amount: 5%);
     opacity: 0.99;
-    min-height: 50vh;
+    min-height: 55vh;
     padding-bottom: 5rem;
     .play__heading {
-        @include heading__section(white);
+        @include heading__section(white, 3rem);
         margin-top: 3rem;
     }
     h3 {
-        @include heading_white();
+        @include heading__section(white, 1.7rem);
     }
     .play__icons {
         @include round_icons();
-        transition: all 0.5s ease-in-out 0s;
-        &:hover {
-            transform: scale(1.1) rotate(360deg);
-        }
     }
 }
 
@@ -216,7 +210,7 @@ header {
     padding-top: 5rem;
     @extend %flex-centered;
     .news__heading {
-        @include heading__section($bleuFonce);
+        @include heading__section($bleuFonce, 3rem);
         padding: 2rem;
     }
     .news__link {
@@ -231,13 +225,12 @@ header {
         @extend %flex-centered;
         width: 30rem;
         height: 70rem;
-
         box-shadow: 0px 0px 10px -2px rgb(156, 156, 156);
     }
     .card-tittle {
-        @include heading__section(rgb(228, 97, 36));
-        font-size: 1.8rem;
+        @include heading__section($orange, 1.8rem);
         padding: 0rem;
+        padding-top: 2rem;
     }
     p {
         font-size: 1.3rem;
@@ -254,10 +247,6 @@ header {
     .card__button {
         @include button();
         margin-bottom: 2rem;
-        &:hover {
-            color: white;
-            background-color: $bleuFonce;
-        }
     }
 }
 
@@ -271,7 +260,7 @@ header {
     @extend %flex-centered;
     opacity: 0.9;
     .number__heading {
-        @include heading__section($bleuFonce);
+        @include heading__section($bleuFonce, 3rem);
         padding-top: 5rem;
     }
 }
