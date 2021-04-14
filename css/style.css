@@ -5,6 +5,7 @@
   padding: 0;
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+  border: red 1px solid;
 }
 
 .banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .news .card, .number, .number .number__block, .footer .footer__block {
@@ -156,7 +157,7 @@ header {
 
 .play {
   background-color: #18223e;
-  opacity: 0.99;
+  opacity: 0.97;
   min-height: 55vh;
   padding-bottom: 5rem;
 }
@@ -297,15 +298,15 @@ header {
 }
 
 .number .number__block .number__icons {
-  -webkit-transition: all 2s ease-out 0s;
-  transition: all 2s ease-out 0s;
   height: 12rem;
   width: 15rem;
+  -webkit-transition: all 1s ease-in-out 0s;
+  transition: all 1s ease-in-out 0s;
 }
 
 .number .number__block .number__icons:hover {
-  -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .number .number__block .number__title {
@@ -328,7 +329,7 @@ header {
 
 .footer {
   background-color: white;
-  padding-top: 5rem;
+  padding: 5rem 1rem;
 }
 
 .footer .footer__block {
@@ -336,7 +337,7 @@ header {
 }
 
 .footer .footer__block .footer__block__heading {
-  color: #1f2c50;
+  color: #fbbb10;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
@@ -345,7 +346,7 @@ header {
 }
 
 .footer .footer__block .footer__block__paragraph {
-  color: #1f2c50;
+  color: #fbbb10;
   font-size: 1.5rem;
   text-align: justify;
   padding: 1rem 2rem;
@@ -359,6 +360,8 @@ header {
 
 .footer .footer__block .footer__block__icons {
   width: 10rem;
+  padding: 0;
+  margin: 0;
 }
 
 .footer .footer__block--a_propos {
@@ -369,9 +372,6 @@ header {
 }
 
 .footer .footer__block--icons {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
