@@ -438,7 +438,6 @@ header .logo .box__hidden {
     position: relative;
     text-decoration: none;
     color: #1f2c50;
-    padding: 10px 0;
   }
   .nav-link:after {
     content: "";

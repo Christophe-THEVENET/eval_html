@@ -393,7 +393,6 @@ header {
         position: relative;
         text-decoration: none;
         color: $bleuFonce;
-        padding: 10px 0;
     }
 
     .nav-link:after {
@@ -410,6 +409,7 @@ header {
     .nav-link:hover:after {
         width: 100%;
     }
+    // ............................
 
     .banniere {
         height: 55vh;
