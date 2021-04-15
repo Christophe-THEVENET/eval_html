@@ -394,9 +394,37 @@ header {
             justify-content: space-between;
     width: 100%;
     padding: 0 15%;
+    position: relative;
+    text-decoration: none;
+    color: #1f2c50;
+    padding: 10px 0;
+    position: relative;
+    text-decoration: none;
+    color: #1f2c50;
+    padding: 10px 0;
   }
-  .nav .navbar-collapse .navbar-nav .nav__item .nav-link {
-    padding: 2rem;
+  .nav .navbar-collapse .navbar-nav .nav-link:hover {
+    background-color: white;
+  }
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #1f2c50;
+    padding: 10px 0;
+  }
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #1f2c50;
+    -webkit-transition: width 500ms ease;
+    transition: width 500ms ease;
+  }
+  .nav-link:hover:after {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

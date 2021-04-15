@@ -103,7 +103,6 @@ header {
     }
     .navbar-collapse {
         padding-top: 1rem;
-
         .nav-link {
             color: $bleuFonce;
             font-size: 1.5rem;
@@ -115,7 +114,6 @@ header {
             font-weight: bold;
             text-align: center;
             width: 11rem;
-
             &:hover {
                 background-color: $yellow;
                 color: $bleuFonce;
@@ -353,14 +351,44 @@ header {
                 justify-content: space-between;
                 width: 100%;
                 padding: 0 15%;
-                .nav__item {
-                    .nav-link {
-                        padding: 2rem;
-                    }
+                position: relative;
+                text-decoration: none;
+                color: $bleuFonce;
+                padding: 10px 0;
+                position: relative;
+                text-decoration: none;
+                color: $bleuFonce;
+                padding: 10px 0;
+                .nav-link:hover {
+                    background-color: white;
                 }
             }
         }
     }
 
-    // ----
+    // ..........effet souligne bare de navigation..............
+
+    .nav-link {
+        position: relative;
+        text-decoration: none;
+        color: $bleuFonce;
+        padding: 10px 0;
+    }
+
+    .nav-link:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: $bleuFonce;
+        transition: width 500ms ease;
+    }
+
+    .nav-link:hover:after {
+        width: 100%;
+    }
+
+    // ...............................................
 }
