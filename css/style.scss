@@ -82,19 +82,22 @@ header {
     height: 5rem;
     z-index: 2;
     background-color: #ffffff;
-}
-.logo {
-    position: relative;
-    #logo__img {
-        position: absolute;
-        width: 9rem;
-        left: 0;
-        background-color: #ffffff;
-        border-radius: 50%;
-        padding: 1rem;
+
+    .logo {
+        position: relative;
+        #logo__img {
+            position: absolute;
+            width: 8rem;
+            left: -0.5rem;
+            background-color: #ffffff;
+            border-radius: 50%;
+            padding: 1rem;
+        }
+        .box__hidden {
+            visibility: hidden;
+        }
     }
 }
-
 // .................NAV............
 
 .nav {
@@ -335,14 +338,31 @@ header {
 @media screen and (min-width: 991px) {
     header {
         height: 8rem;
-    }
-    .logo {
-        #logo__img {
-            width: 13rem;
-            left: -0.5rem;
+
+        .logo {
+            #logo__img {
+                width: 13rem;
+                left: -0.8rem;
+                z-index: 3;
+            }
+            .box__hidden {
+                visibility: visible;
+                margin-top: 4rem;
+                margin-left: 5rem;
+                position: absolute;
+                border-radius: 1rem;
+                width: 25rem;
+                height: 7rem;
+                background-color: $bleuFonce;
+                color: white;
+                font-size: 1.2rem;
+                padding: 2rem;
+                font-weight: bold;
+                padding-left: 8rem;
+                text-align: center;
+            }
         }
     }
-
     .nav {
         .navbar-collapse {
             padding-top: 0;

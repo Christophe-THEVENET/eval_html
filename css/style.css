@@ -34,17 +34,21 @@ header {
   background-color: #ffffff;
 }
 
-.logo {
+header .logo {
   position: relative;
 }
 
-.logo #logo__img {
+header .logo #logo__img {
   position: absolute;
-  width: 9rem;
-  left: 0;
+  width: 8rem;
+  left: -0.5rem;
   background-color: #ffffff;
   border-radius: 50%;
   padding: 1rem;
+}
+
+header .logo .box__hidden {
+  visibility: hidden;
 }
 
 .nav .navbar-toggler {
@@ -378,9 +382,26 @@ header {
   header {
     height: 8rem;
   }
-  .logo #logo__img {
+  header .logo #logo__img {
     width: 13rem;
-    left: -0.5rem;
+    left: -0.8rem;
+    z-index: 3;
+  }
+  header .logo .box__hidden {
+    visibility: visible;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    position: absolute;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 7rem;
+    background-color: #1f2c50;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2rem;
+    font-weight: bold;
+    padding-left: 8rem;
+    text-align: center;
   }
   .nav .navbar-collapse {
     padding-top: 0;
