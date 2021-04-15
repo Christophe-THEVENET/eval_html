@@ -82,7 +82,6 @@ header {
     height: 5rem;
     z-index: 2;
     background-color: #ffffff;
-
     .logo {
         position: relative;
         #logo__img {
@@ -98,6 +97,7 @@ header {
         }
     }
 }
+
 // .................NAV............
 
 .nav {
@@ -130,10 +130,11 @@ header {
 .banniere {
     height: 100vh;
     @extend %flex-centered;
+    flex-direction: column;
     .banniere__heading {
         height: 35%;
         width: 70%;
-        margin-top: 10%;
+        margin-top: 30%;
         background-color: rgba(255, 255, 255, 0.788);
         border-radius: 1rem;
         font-size: 3.2vmax;
@@ -143,6 +144,12 @@ header {
         color: $bleuFonce;
         @extend %flex-centered;
         text-shadow: $title-shadow;
+    }
+    .banniere__arrow {
+        display: block;
+        width: 15rem;
+        height: 15rem;
+        margin-top: 5rem;
     }
 }
 
@@ -299,7 +306,6 @@ header {
 .footer {
     background-color: white;
     padding: 5rem 1rem;
-
     .footer__block {
         @extend %flex-centered;
         padding: 2rem;
@@ -321,7 +327,7 @@ header {
             }
         }
         .footer__block__icons {
-            width: 10rem;
+            width: 7rem;
             padding: 0;
             margin: 0;
         }
@@ -329,17 +335,13 @@ header {
     .footer__block--a_propos {
         flex-direction: column;
     }
-    .footer__block--icons {
-        flex-wrap: wrap;
-    }
 }
 
-// ..................RESPONSIVE >  700px ..............
+// ..................RESPONSIVE >  700px .............................
 
 @media screen and (min-width: 991px) {
     header {
         height: 8rem;
-
         .logo {
             #logo__img {
                 width: 13rem;
@@ -386,9 +388,7 @@ header {
             }
         }
     }
-
     // .....effet souligne bare de navigation.........
-
     .nav-link {
         position: relative;
         text-decoration: none;
@@ -411,13 +411,15 @@ header {
         width: 100%;
     }
 
-    // ....BANNIERE.........
-
     .banniere {
-        height: 60vh;
+        height: 55vh;
+        .banniere__heading {
+            margin-top: 10%;
+        }
+        .banniere__arrow {
+            display: none;
+        }
     }
-
-    // .......ABOUT.............
 
     .about {
         padding: 5rem;
@@ -440,8 +442,26 @@ header {
         }
     }
 
-    .news .news__heading {
-        margin-left: -10rem;
-        margin-right: 20rem;
+    .news {
+        .news__heading {
+            margin-left: -10rem;
+            margin-right: 20rem;
+        }
+        .card {
+            margin-bottom: 9rem;
+        }
     }
+
+    .number {
+        padding-bottom: 0;
+        .number__block {
+            height: 31rem;
+        }
+    }
+
+    // ...
+
+    // ........
+
+    // ....
 }
