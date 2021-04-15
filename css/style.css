@@ -498,4 +498,18 @@ header .logo .box__hidden {
     height: 31rem;
   }
 }
+
+.event {
+  height: 50vh;
+  background-color: white;
+}
+
+.event .event__heading {
+  color: #e46124;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 5rem;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */

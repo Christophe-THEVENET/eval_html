@@ -458,10 +458,13 @@ header {
             height: 31rem;
         }
     }
+}
 
-    // ...
-
-    // ........
-
-    // ....
+// ...................EVENEMENTS.HTML................
+.event {
+    height: 50vh;
+    background-color: white;
+    .event__heading {
+        @include heading__section($orange, 3rem);
+    }
 }
