@@ -185,7 +185,7 @@ header {
     }
     .about__paragraph {
         font-size: 1.5rem;
-        width: 120%;
+        // width: 120%;
         padding: 1rem;
         max-width: 70rem;
         text-align: justify;
@@ -332,6 +332,12 @@ header {
             margin: 0;
         }
     }
+    .footer__block--icons {
+        display: flex;
+        justify-content: space-between;
+        max-width: 70rem;
+        margin: auto;
+    }
     .footer__block--a_propos {
         flex-direction: column;
     }
@@ -461,10 +467,24 @@ header {
 }
 
 // ...................EVENEMENTS.HTML................
+
+.banniere .banniere__heading--orange {
+    color: $orange;
+}
+
 .event {
-    height: 50vh;
+    min-height: 50vh;
     background-color: white;
-    .event__heading {
-        @include heading__section($orange, 3rem);
+    .event__block {
+        .event__heading {
+            @include heading__section($orange, 1.5vmax);
+            padding: 2rem 1rem;
+        }
+
+        .event__article {
+            background-color: yellow;
+            height: 40rem;
+            width: 150rem;
+        }
     }
 }
