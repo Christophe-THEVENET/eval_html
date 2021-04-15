@@ -186,6 +186,7 @@ header {
     }
     .about__button {
         @include button();
+        margin: 0;
     }
 }
 
@@ -386,7 +387,7 @@ header {
         }
     }
 
-    // ..........effet souligne bare de navigation..............
+    // .....effet souligne bare de navigation.........
 
     .nav-link {
         position: relative;
@@ -410,5 +411,37 @@ header {
         width: 100%;
     }
 
-    // ...............................................
+    // ....BANNIERE.........
+
+    .banniere {
+        height: 60vh;
+    }
+
+    // .......ABOUT.............
+
+    .about {
+        padding: 5rem;
+        background-color: #ffffff;
+
+        flex-direction: column;
+        .about__img {
+            width: 45rem;
+            height: 35rem;
+            margin-bottom: 8rem;
+            position: relative;
+        }
+        .about__heading {
+            position: absolute;
+            left: -6rem;
+            top: 22rem;
+        }
+        .about__paragraph {
+            max-width: 90rem;
+        }
+    }
+
+    .news .news__heading {
+        margin-left: -10rem;
+        margin-right: 20rem;
+    }
 }

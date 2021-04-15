@@ -148,6 +148,7 @@ header .logo .box__hidden {
   margin: 2rem auto;
   color: #1f2c50;
   border: 1px solid #1f2c50;
+  margin: 0;
 }
 
 .about .about__button:hover {
@@ -446,6 +447,35 @@ header .logo .box__hidden {
   }
   .nav-link:hover:after {
     width: 100%;
+  }
+  .banniere {
+    height: 60vh;
+  }
+  .about {
+    padding: 5rem;
+    background-color: #ffffff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .about__img {
+    width: 45rem;
+    height: 35rem;
+    margin-bottom: 8rem;
+    position: relative;
+  }
+  .about .about__heading {
+    position: absolute;
+    left: -6rem;
+    top: 22rem;
+  }
+  .about .about__paragraph {
+    max-width: 90rem;
+  }
+  .news .news__heading {
+    margin-left: -10rem;
+    margin-right: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
