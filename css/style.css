@@ -55,17 +55,20 @@ header {
   padding-top: 1rem;
 }
 
-.nav .nav-link {
+.nav .navbar-collapse .nav-link {
   color: #1f2c50;
   font-size: 1.5rem;
   border-radius: 0.3rem;
   background-color: white;
   margin: 0.1rem;
+  float: right;
+  padding: 0.5rem;
   font-weight: bold;
   text-align: center;
+  width: 11rem;
 }
 
-.nav .nav-link:hover {
+.nav .navbar-collapse .nav-link:hover {
   background-color: #fbbb10;
   color: #1f2c50;
 }
@@ -75,7 +78,7 @@ header {
 }
 
 .banniere .banniere__heading {
-  height: 40%;
+  height: 35%;
   width: 70%;
   margin-top: 10%;
   background-color: rgba(255, 255, 255, 0.788);
@@ -83,6 +86,7 @@ header {
   font-size: 3.2vmax;
   font-weight: bold;
   text-align: center;
+  padding: 1.5rem;
   color: #1f2c50;
   text-shadow: 1px 1px 2px #ffffff85;
 }
@@ -370,17 +374,29 @@ header {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 991px) {
   header {
     height: 8rem;
   }
-  .logo {
-    position: relative;
-  }
   .logo #logo__img {
-    position: absolute;
     width: 13rem;
     left: -0.5rem;
+  }
+  .nav .navbar-collapse {
+    padding-top: 0;
+  }
+  .nav .navbar-collapse .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0 15%;
+  }
+  .nav .navbar-collapse .navbar-nav .nav__item .nav-link {
+    padding: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -103,19 +103,23 @@ header {
     }
     .navbar-collapse {
         padding-top: 1rem;
-    }
-    .nav-link {
-        color: $bleuFonce;
-        font-size: 1.5rem;
-        border-radius: 0.3rem;
-        background-color: white;
-        margin: 0.1rem;
-        font-weight: bold;
-        text-align: center;
 
-        &:hover {
-            background-color: $yellow;
+        .nav-link {
             color: $bleuFonce;
+            font-size: 1.5rem;
+            border-radius: 0.3rem;
+            background-color: white;
+            margin: 0.1rem;
+            float: right;
+            padding: 0.5rem;
+            font-weight: bold;
+            text-align: center;
+            width: 11rem;
+
+            &:hover {
+                background-color: $yellow;
+                color: $bleuFonce;
+            }
         }
     }
 }
@@ -126,7 +130,7 @@ header {
     height: 100vh;
     @extend %flex-centered;
     .banniere__heading {
-        height: 40%;
+        height: 35%;
         width: 70%;
         margin-top: 10%;
         background-color: rgba(255, 255, 255, 0.788);
@@ -134,6 +138,7 @@ header {
         font-size: 3.2vmax;
         font-weight: bold;
         text-align: center;
+        padding: 1.5rem;
         color: $bleuFonce;
         @extend %flex-centered;
         text-shadow: $title-shadow;
@@ -329,16 +334,33 @@ header {
 
 // ..................RESPONSIVE >  700px ..............
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 991px) {
     header {
         height: 8rem;
     }
     .logo {
-        position: relative;
         #logo__img {
-            position: absolute;
             width: 13rem;
             left: -0.5rem;
         }
     }
+
+    .nav {
+        .navbar-collapse {
+            padding-top: 0;
+            .navbar-nav {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 15%;
+                .nav__item {
+                    .nav-link {
+                        padding: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // ----
 }
