@@ -474,24 +474,40 @@ header {
 }
 
 .event {
-    min-height: 50vh;
+    padding-bottom: 10rem;
     background-color: rgba(255, 255, 255, 0.9);
     .event__container {
+        // border: red 1px solid;
         .event__heading {
             @include heading__section($darkBlue, 1.5vmax);
-            padding: 2rem 1rem;
-        }
-
-        .event__block {
-            height: 40rem;
-            width: 150rem;
-            @extend %flex-centered;
-            .event__article {
-                height: 35rem;
-                width: 100%;
-                background-color: white;
-                box-shadow: 2px 2px 10px -3px rgb(153, 153, 153);
-            }
+            text-align: start;
+            background-color: white;
+            margin: 5rem auto;
+            padding: 1rem;
         }
     }
+}
+.event__article {
+    background-color: white;
+    box-shadow: 2px 2px 10px -3px rgb(153, 153, 153);
+    // border: rgb(65, 197, 53) 1px solid;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50rem;
+    min-height: 20rem;
+    .article__img {
+        background: url(../img/art1.jpg);
+        width: 12rem;
+        height: 9rem;
+    }
+}
+
+.article__title {
+}
+.article__place {
+}
+.article__date {
+}
+.article__descrition {
 }
