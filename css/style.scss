@@ -50,17 +50,17 @@
     font-weight: bold;
     border-radius: 0.8rem;
     margin: 2rem auto;
-    color: $bleuFonce;
-    border: 1px solid $bleuFonce;
+    color: $darkBlue;
+    border: 1px solid $darkBlue;
     &:hover {
         color: white;
-        background-color: $bleuFonce;
+        background-color: $darkBlue;
     }
 }
 
 // ........COULEURS..ET OMBRES............
 
-$bleuFonce: #1f2c50;
+$darkBlue: #1f2c50;
 $orange: rgb(228, 97, 36);
 $yellow: #fbbb10;
 $title-shadow: 1px 1px 2px #ffffff85;
@@ -107,7 +107,7 @@ header {
     .navbar-collapse {
         padding-top: 1rem;
         .nav-link {
-            color: $bleuFonce;
+            color: $darkBlue;
             font-size: 1.5rem;
             border-radius: 0.3rem;
             background-color: white;
@@ -119,7 +119,7 @@ header {
             width: 11rem;
             &:hover {
                 background-color: $yellow;
-                color: $bleuFonce;
+                color: $darkBlue;
             }
         }
     }
@@ -141,7 +141,7 @@ header {
         font-weight: bold;
         text-align: center;
         padding: 1.5rem;
-        color: $bleuFonce;
+        color: $darkBlue;
         @extend %flex-centered;
         text-shadow: $title-shadow;
     }
@@ -149,7 +149,8 @@ header {
         display: block;
         width: 15rem;
         height: 15rem;
-        margin-top: 5rem;
+        margin-top: 10rem;
+        opacity: 0.7;
     }
 }
 
@@ -189,7 +190,7 @@ header {
         padding: 1rem;
         max-width: 70rem;
         text-align: justify;
-        color: $bleuFonce;
+        color: $darkBlue;
     }
     .about__button {
         @include button();
@@ -200,7 +201,7 @@ header {
 // .................PLAY...................................
 
 .play {
-    background-color: darken($bleuFonce, $amount: 5%);
+    background-color: darken($darkBlue, $amount: 5%);
     opacity: 0.95;
     min-height: 55vh;
     padding-bottom: 5rem;
@@ -223,11 +224,11 @@ header {
     padding-top: 5rem;
     @extend %flex-centered;
     .news__heading {
-        @include heading__section($bleuFonce, 3.5rem);
+        @include heading__section($darkBlue, 3.5rem);
         padding: 2rem;
     }
     .news__link {
-        color: $bleuFonce;
+        color: $darkBlue;
         font-size: 1.8rem;
         font-weight: bold;
     }
@@ -249,7 +250,7 @@ header {
     p {
         font-size: 1.3rem;
         text-align: justify;
-        color: $bleuFonce;
+        color: $darkBlue;
         padding: 2rem;
     }
     .card__date {
@@ -272,7 +273,7 @@ header {
     opacity: 0.95;
     padding-bottom: 3rem;
     .number__heading {
-        @include heading__section($bleuFonce, 3.5rem);
+        @include heading__section($darkBlue, 3.5rem);
     }
     .number__block {
         @extend %flex-centered;
@@ -289,11 +290,11 @@ header {
             }
         }
         .number__title {
-            @include heading__section($bleuFonce, 3rem);
+            @include heading__section($darkBlue, 3rem);
             padding: 2rem;
         }
         .number__paragraph {
-            color: $bleuFonce;
+            color: $darkBlue;
             font-size: 1.5rem;
             text-align: center;
             font-weight: bold;
@@ -317,10 +318,10 @@ header {
     .footer__block--a_propos {
         flex-direction: column;
         .footer__block--a_propos--heading {
-            @include heading__section($bleuFonce, 1.5rem);
+            @include heading__section($darkBlue, 1.5rem);
         }
         .footer__block--a_propos--paragraph {
-            color: $bleuFonce;
+            color: $darkBlue;
             font-size: 1.5rem;
             text-align: justify;
             padding: 1rem 2rem;
@@ -362,7 +363,7 @@ header {
                 border-radius: 1rem;
                 width: 25rem;
                 height: 7rem;
-                background-color: $bleuFonce;
+                background-color: $darkBlue;
                 color: white;
                 font-size: 1.2rem;
                 padding: 2rem;
@@ -382,11 +383,11 @@ header {
                 padding: 0 15%;
                 position: relative;
                 text-decoration: none;
-                color: $bleuFonce;
+                color: $darkBlue;
                 padding: 10px 0;
                 position: relative;
                 text-decoration: none;
-                color: $bleuFonce;
+                color: $darkBlue;
                 padding: 10px 0;
                 .nav-link:hover {
                     background-color: white;
@@ -398,7 +399,7 @@ header {
     .nav-link {
         position: relative;
         text-decoration: none;
-        color: $bleuFonce;
+        color: $darkBlue;
     }
 
     .nav-link:after {
@@ -408,7 +409,7 @@ header {
         bottom: 0;
         width: 0;
         height: 2px;
-        background: $bleuFonce;
+        background: $darkBlue;
         transition: width 500ms ease;
     }
 
@@ -474,17 +475,23 @@ header {
 
 .event {
     min-height: 50vh;
-    background-color: white;
-    .event__block {
+    background-color: rgba(255, 255, 255, 0.9);
+    .event__container {
         .event__heading {
-            @include heading__section($orange, 1.5vmax);
+            @include heading__section($darkBlue, 1.5vmax);
             padding: 2rem 1rem;
         }
 
-        .event__article {
-            background-color: yellow;
+        .event__block {
             height: 40rem;
             width: 150rem;
+            @extend %flex-centered;
+            .event__article {
+                height: 35rem;
+                width: 100%;
+                background-color: white;
+                box-shadow: 2px 2px 10px -3px rgb(153, 153, 153);
+            }
         }
     }
 }

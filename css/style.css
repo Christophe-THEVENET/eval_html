@@ -7,7 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .number, .number .number__block, .footer .footer__block {
+.banniere, .banniere .banniere__heading, .about, .about .about__img, .news, .number, .number .number__block, .footer .footer__block, .event .event__container .event__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +103,8 @@ header .logo .box__hidden {
   display: block;
   width: 15rem;
   height: 15rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
+  opacity: 0.7;
 }
 
 .about {
@@ -512,11 +513,11 @@ header .logo .box__hidden {
 
 .event {
   min-height: 50vh;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.event .event__block .event__heading {
-  color: #e46124;
+.event .event__container .event__heading {
+  color: #1f2c50;
   font-size: 1.5vmax;
   font-weight: bold;
   text-align: center;
@@ -525,9 +526,16 @@ header .logo .box__hidden {
   padding: 2rem 1rem;
 }
 
-.event .event__block .event__article {
-  background-color: yellow;
+.event .event__container .event__block {
   height: 40rem;
   width: 150rem;
+}
+
+.event .event__container .event__block .event__article {
+  height: 35rem;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 10px -3px #999999;
+          box-shadow: 2px 2px 10px -3px #999999;
 }
 /*# sourceMappingURL=style.css.map */
