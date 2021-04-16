@@ -312,10 +312,14 @@ header {
         .footer__block__img {
             width: 25rem;
         }
-        .footer__block__heading {
+    }
+
+    .footer__block--a_propos {
+        flex-direction: column;
+        .footer__block--a_propos--heading {
             @include heading__section($bleuFonce, 1.5rem);
         }
-        .footer__block__paragraph {
+        .footer__block--a_propos--paragraph {
             color: $bleuFonce;
             font-size: 1.5rem;
             text-align: justify;
@@ -326,20 +330,16 @@ header {
                 font-size: 1.5rem;
             }
         }
-        .footer__block__icons {
-            width: 7rem;
-            padding: 0;
-            margin: 0;
-        }
     }
+
     .footer__block--icons {
+        padding: 0;
+        margin: 0;
         display: flex;
-        justify-content: space-between;
-        max-width: 70rem;
-        margin: auto;
-    }
-    .footer__block--a_propos {
-        flex-direction: column;
+        justify-content: space-around;
+        .footer__block--icons--icons {
+            max-width: 8rem;
+        }
     }
 }
 
