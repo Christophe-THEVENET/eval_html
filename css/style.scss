@@ -23,7 +23,6 @@
     padding: $padding;
     font-weight: bold;
     text-align: center;
-
     text-transform: uppercase;
 }
 
@@ -142,7 +141,7 @@ header {
         font-weight: bold;
         text-align: center;
         line-height: 5rem;
-        padding: 1.5rem 13rem;
+        /* padding: 1.5rem 13rem; */
         color: $darkBlue;
         @extend %flex-centered;
         text-shadow: $title-shadow;
@@ -561,5 +560,11 @@ header {
             font-size: 1rem;
             text-align: justify;
         }
+    }
+    .envent--heading--yellow {
+        color: $yellow;
+    }
+    .envent--heading--green {
+        color: rgb(90, 185, 90);
     }
 }

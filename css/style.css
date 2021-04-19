@@ -95,7 +95,7 @@ header .logo .box__hidden {
   font-weight: bold;
   text-align: center;
   line-height: 5rem;
-  padding: 1.5rem 13rem;
+  /* padding: 1.5rem 13rem; */
   color: #1f2c50;
   text-shadow: 1px 1px 2px #ffffff85;
 }
@@ -669,5 +669,13 @@ header .logo .box__hidden {
 .event__article .event__article--collapse p {
   font-size: 1rem;
   text-align: justify;
+}
+
+.event__article .envent--heading--yellow {
+  color: #fbbb10;
+}
+
+.event__article .envent--heading--green {
+  color: #5ab95a;
 }
 /*# sourceMappingURL=style.css.map */
