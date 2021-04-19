@@ -178,16 +178,17 @@ header .logo .box__hidden {
 .play .play__heading {
   color: white;
   font-size: 3.5rem;
-  padding: 3rem;
+  padding: 5rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 3rem;
 }
 
 .play h3 {
   color: white;
   font-size: 1.7rem;
-  padding: auto;
+  padding: 3rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -545,13 +546,14 @@ header .logo .box__hidden {
 }
 
 .event__article .event__article--img {
-  background: url(../img/art1.jpg);
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-column: 4 / 6;
+  width: 98%;
+  max-height: 9rem;
 }
 
 .event__article .event__article--heading {
