@@ -490,55 +490,74 @@ header {
     width: 50rem;
     min-height: 20rem;
     display: grid;
-    grid-template-rows: 5rem 2rem 2rem 3rem 2rem 1fr;
+    grid-template-rows: 4rem 2rem 1rem 3rem 2rem 1fr;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    /* align-content: center;
-    justify-content: center; */
     overflow: hidden;
     .event__article--img {
         background: url(../img/art1.jpg);
-        grid-row: 1 / 3;
+        grid-row: 1 / 4;
         grid-column: 4 / 6;
     }
     .event__article--heading {
-        @include heading__mixin($orange, 1.5rem, 1rem);
+        @include heading__mixin($orange, 1.5rem, auto);
         grid-row: 1 / 2;
         grid-column: 1 / 4;
-        padding: 0;
-        margin: 0;
+        align-self: center;
     }
     .event__article--place {
-        @include heading__mixin($yellow, 1.2rem, 1rem);
+        @include heading__mixin($darkBlue, 1.1rem, 1rem);
         grid-row: 2 / 3;
         grid-column: 1 / 4;
-        padding: 0;
-        margin: 0;
+        align-self: center;
     }
     .event__article--date {
-        @include heading__mixin($yellow, 1.2rem, 1rem);
+        @include heading__mixin($darkBlue, 1rem, 1rem);
+        opacity: 0.7;
         grid-row: 3 / 4;
         grid-column: 1 / 4;
-        padding: 0;
-        margin: 0;
+        align-self: center;
+        font-weight: normal;
     }
     .event__article--description {
         grid-row: 4 / 5;
         grid-column: 1 / 6;
-        padding: 0;
-        margin: 0;
+        font-size: 1.2rem;
+        color: $darkBlue;
+        text-align: justify;
+        margin-bottom: 2rem;
     }
     .event__article--button {
         grid-row: 5 / 6;
-        grid-column: 2 / 4;
-        padding: 0;
-        margin: 0;
+        grid-column: 3 / 5;
+        font-size: 1.7rem;
+        color: $darkBlue;
+        opacity: 0.6;
+        text-align: justify;
+        padding: 2rem;
     }
 
     .event__article--collapse {
         grid-row: 6 / 7;
         grid-column: 1 / 6;
-        padding: 0;
-        margin: 0;
+        font-size: 1.2rem;
+        color: $darkBlue;
+        text-align: justify;
+        margin-top: 3rem;
+        span {
+            font-size: 1.2rem;
+            color: $darkBlue;
+            font-weight: bold;
+        }
+        ul {
+            margin-left: 2rem;
+            li {
+                font-size: 1.1rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+            text-align: justify;
+        }
     }
 }
