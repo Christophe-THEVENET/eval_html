@@ -4,7 +4,7 @@
     padding: 0;
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
-    // border: red 1px solid;
+    //border: red 1px solid;
 }
 
 // .....CENTRER ELEMENTS.......
@@ -132,16 +132,16 @@ header {
     @extend %flex-centered;
     flex-direction: column;
     .banniere__heading {
-        height: 35%;
-        width: 70%;
-        margin-top: 30%;
-        background-color: rgba(255, 255, 255, 0.788);
+        width: auto;
+        max-width: 80%;
+        margin-top: 20%;
+        background-color: rgba(255, 255, 255, 1);
         border-radius: 1rem;
-        font-size: 3.2vmax;
+        font-size: 2.8vmax;
         font-weight: bold;
         text-align: center;
         line-height: 5rem;
-        /* padding: 1.5rem 13rem; */
+        padding: 1rem;
         color: $darkBlue;
         @extend %flex-centered;
         text-shadow: $title-shadow;
@@ -420,7 +420,7 @@ header {
         height: 55vh;
         .banniere__heading {
             margin-top: 10%;
-            padding: 0.5rem;
+            padding: 2rem;
         }
         .banniere__arrow {
             display: none;
@@ -477,8 +477,10 @@ header {
     padding-bottom: 10rem;
     background-color: rgba(255, 255, 255, 0.96);
     .event__heading {
-        @include heading__mixin($darkBlue, 1.5vmax, auto);
-        margin: 1rem auto;
+        @include heading__mixin($darkBlue, 1.5rem, 0rem);
+        text-transform: none;
+        font-style: italic;
+        text-align: start;
     }
 }
 .event__article {
@@ -566,5 +568,23 @@ header {
     }
     .envent--heading--green {
         color: rgb(90, 185, 90);
+    }
+}
+
+@media screen and(max-width: 340px) {
+    .event__article {
+        .event__article--heading {
+            font-size: 1rem;
+        }
+        .event__article--place {
+            font-size: 0.8rem;
+        }
+        .event__article--description {
+            font-size: 0.9rem;
+        }
+        .event__article--button {
+            padding: 0;
+            margin-top: 2rem;
+        }
     }
 }

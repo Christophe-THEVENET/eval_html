@@ -86,16 +86,16 @@ header .logo .box__hidden {
 }
 
 .banniere .banniere__heading {
-  height: 35%;
-  width: 70%;
-  margin-top: 30%;
-  background-color: rgba(255, 255, 255, 0.788);
+  width: auto;
+  max-width: 80%;
+  margin-top: 20%;
+  background-color: white;
   border-radius: 1rem;
-  font-size: 3.2vmax;
+  font-size: 2.8vmax;
   font-weight: bold;
   text-align: center;
   line-height: 5rem;
-  /* padding: 1.5rem 13rem; */
+  padding: 1rem;
   color: #1f2c50;
   text-shadow: 1px 1px 2px #ffffff85;
 }
@@ -464,7 +464,7 @@ header .logo .box__hidden {
   }
   .banniere .banniere__heading {
     margin-top: 10%;
-    padding: 0.5rem;
+    padding: 2rem;
   }
   .banniere .banniere__arrow {
     display: none;
@@ -518,12 +518,14 @@ header .logo .box__hidden {
 
 .event .event__heading {
   color: #1f2c50;
-  font-size: 1.5vmax;
-  padding: auto;
+  font-size: 1.5rem;
+  padding: 0rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  margin: 1rem auto;
+  text-transform: none;
+  font-style: italic;
+  text-align: start;
 }
 
 .event__article {
@@ -677,5 +679,21 @@ header .logo .box__hidden {
 
 .event__article .envent--heading--green {
   color: #5ab95a;
+}
+
+@media screen and (max-width: 340px) {
+  .event__article .event__article--heading {
+    font-size: 1rem;
+  }
+  .event__article .event__article--place {
+    font-size: 0.8rem;
+  }
+  .event__article .event__article--description {
+    font-size: 0.9rem;
+  }
+  .event__article .event__article--button {
+    padding: 0;
+    margin-top: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
