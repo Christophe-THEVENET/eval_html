@@ -513,7 +513,7 @@ header .logo .box__hidden {
 
 .event {
   padding-bottom: 10rem;
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: rgba(255, 255, 255, 0.96);
 }
 
 .event .event__heading {
@@ -537,8 +537,8 @@ header .logo .box__hidden {
   min-height: 20rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4rem 2rem 1rem 3rem 2rem 1fr;
-      grid-template-rows: 4rem 2rem 1rem 3rem 2rem 1fr;
+  -ms-grid-rows: 6rem 1rem 0.7rem 3rem 2rem 1fr;
+      grid-template-rows: 6rem 1rem 0.7rem 3rem 2rem 1fr;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
@@ -559,7 +559,7 @@ header .logo .box__hidden {
 .event__article .event__article--heading {
   color: #e46124;
   font-size: 1.5rem;
-  padding: auto;
+  padding: 0rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -577,7 +577,7 @@ header .logo .box__hidden {
 .event__article .event__article--place {
   color: #1f2c50;
   font-size: 1.1rem;
-  padding: 1rem;
+  padding: 0rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -595,7 +595,7 @@ header .logo .box__hidden {
 .event__article .event__article--date {
   color: #1f2c50;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 0rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
