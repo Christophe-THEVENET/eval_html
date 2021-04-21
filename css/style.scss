@@ -630,7 +630,7 @@ header {
         }
         .contact__address--place {
             @include heading__mixin($darkBlue, 1.5rem, 2rem);
-            margin-top: -4rem;
+            margin-top: -2rem;
             text-transform: none;
             font-weight: normal;
             span {
