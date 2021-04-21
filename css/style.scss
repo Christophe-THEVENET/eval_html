@@ -4,10 +4,9 @@
     padding: 0;
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
-    // border: red 1px solid;
 }
 
-// .....CENTRER ELEMENTS.......
+// ........CENTRER ELEMENTS.........
 
 %flex-centered {
     display: flex;
@@ -76,7 +75,7 @@ $title-shadow: 1px 1px 2px #ffffff85;
     z-index: -10;
 }
 
-// ..............HEADER....................................
+// .........................HEADER.......................................
 
 header {
     height: 5rem;
@@ -98,7 +97,7 @@ header {
     }
 }
 
-// .................NAV............
+// ...................NAV.....................
 
 .nav {
     .navbar-toggler {
@@ -125,7 +124,7 @@ header {
     }
 }
 
-// ................BANNIERE..............................
+// ...........................BANNIERE.......................................
 
 .banniere {
     height: 100vh;
@@ -155,7 +154,7 @@ header {
     }
 }
 
-// .................ABOUT..................................
+// .......................ABOUT........................................
 
 .about {
     padding: 5rem;
@@ -199,7 +198,7 @@ header {
     }
 }
 
-// .................PLAY...................................
+// ...............................PLAY.....................................
 
 .play {
     background-color: darken($darkBlue, $amount: 5%);
@@ -218,7 +217,7 @@ header {
     }
 }
 
-// ..................NEWS.................................
+// ..............................NEWS.......................................
 
 .news {
     background-color: #ffffff;
@@ -233,7 +232,7 @@ header {
         font-weight: bold;
     }
 
-    // ......CARD.............
+    // ...............CARD..................
 
     .card {
         padding: 0;
@@ -244,6 +243,7 @@ header {
         transition: all 0.2s ease-in-out 0s;
         &:hover {
             transform: scale(1.01);
+            box-shadow: 2px 2px 15px -2px rgb(153, 153, 153);
         }
         .card-tittle {
             @include heading__mixin($orange, 1.8rem, 0rem);
@@ -267,7 +267,7 @@ header {
     }
 }
 
-// ....................NUMBER.............................
+// .............................NUMBER....................................
 
 .number {
     min-height: 55vh;
@@ -304,7 +304,7 @@ header {
     }
 }
 
-// ...................FOOTER...............................
+// ................................FOOTER....................................
 
 .footer {
     background-color: white;
@@ -316,7 +316,6 @@ header {
             width: 25rem;
         }
     }
-
     .footer__block--a_propos {
         flex-direction: column;
         .footer__block--a_propos--heading {
@@ -346,7 +345,7 @@ header {
     }
 }
 
-// ..................RESPONSIVE >  991px .............................
+// ..................................RESPONSIVE >  991px .....................................
 
 @media screen and (min-width: 991px) {
     header {
@@ -403,7 +402,6 @@ header {
         text-decoration: none;
         color: $darkBlue;
     }
-
     .nav-link:after {
         content: "";
         position: absolute;
@@ -414,7 +412,6 @@ header {
         background: $darkBlue;
         transition: width 500ms ease;
     }
-
     .nav-link:hover:after {
         width: 100%;
     }
@@ -430,11 +427,9 @@ header {
             display: none;
         }
     }
-
     .about {
         padding: 5rem;
         background-color: #ffffff;
-
         flex-direction: column;
         .about__img {
             width: 45rem;
@@ -451,7 +446,6 @@ header {
             max-width: 90rem;
         }
     }
-
     .news {
         .news__heading {
             margin-left: -10rem;
@@ -461,7 +455,6 @@ header {
             margin-bottom: 9rem;
         }
     }
-
     .number {
         padding-bottom: 0;
         padding-top: 0;
@@ -471,7 +464,7 @@ header {
     }
 }
 
-//...................RESPONSIVE < 340 px .........................
+//...........................RESPONSIVE < 340 px .................................
 
 @media screen and(max-width: 340px) {
     .event__article {
@@ -503,12 +496,11 @@ header {
     }
 }
 
-// ...................EVENEMENTS.HTML............................................................
+// ....................................EVENEMENTS.HTML............................................................
 
 .banniere .banniere__heading--orange {
     color: $darkBlue;
 }
-
 .event {
     padding-bottom: 10rem;
     background-color: rgba(255, 255, 255, 0.96);
@@ -532,6 +524,10 @@ header {
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     overflow: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    &:hover {
+        box-shadow: 2px 2px 15px -2px rgb(153, 153, 153);
+    }
     .event__article--img {
         grid-row: 1 / 4;
         grid-column: 4 / 6;
@@ -575,7 +571,6 @@ header {
         text-align: justify;
         padding: 2rem;
     }
-
     .event__article--collapse {
         grid-row: 6 / 7;
         grid-column: 1 / 6;
@@ -607,9 +602,11 @@ header {
     }
 }
 
-//......................CONTACT.HTML..........................................
+//........................................CONTACT.HTML..............................................
 
-.contact__flex {
+//..........adresse.........
+
+.contact__wrapper {
     display: flex;
     justify-content: space-between;
     min-height: 30vh;
@@ -671,6 +668,29 @@ header {
             text-transform: none;
             display: inline-block;
             line-height: 2rem;
+        }
+    }
+}
+//..........formulaire..........
+.contact__form {
+    padding-bottom: 10rem;
+    h4 {
+        @include heading__mixin($darkBlue, 3rem, 6rem);
+        align-self: start;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        @include heading__mixin($darkBlue, 3rem, 4rem);
+        text-transform: none;
+        background-color: rgba(220, 220, 220, 0.474);
+        input {
+            height: 4rem;
+        }
+        textarea {
+            height: 20rem;
         }
     }
 }

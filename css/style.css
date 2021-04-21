@@ -242,6 +242,8 @@ header .logo .box__hidden {
 .news .card:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+  -webkit-box-shadow: 2px 2px 15px -2px #999999;
+          box-shadow: 2px 2px 15px -2px #999999;
 }
 
 .news .card .card-tittle {
@@ -580,6 +582,13 @@ header .logo .box__hidden {
       grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.event__article:hover {
+  -webkit-box-shadow: 2px 2px 15px -2px #999999;
+          box-shadow: 2px 2px 15px -2px #999999;
 }
 
 .event__article .event__article--img {
@@ -716,7 +725,7 @@ header .logo .box__hidden {
   color: #5ab95a;
 }
 
-.contact__flex {
+.contact__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,7 +743,7 @@ header .logo .box__hidden {
   padding: 1rem;
 }
 
-.contact__flex .contact__address {
+.contact__wrapper .contact__address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,7 +764,7 @@ header .logo .box__hidden {
           flex: 1.5;
 }
 
-.contact__flex .contact__address .contact__address--title {
+.contact__wrapper .contact__address .contact__address--title {
   color: #1f2c50;
   font-size: 2rem;
   padding: 2rem;
@@ -764,7 +773,7 @@ header .logo .box__hidden {
   text-transform: uppercase;
 }
 
-.contact__flex .contact__address .contact__address--place {
+.contact__wrapper .contact__address .contact__address--place {
   color: #1f2c50;
   font-size: 1.5rem;
   padding: 2rem;
@@ -776,14 +785,14 @@ header .logo .box__hidden {
   font-weight: normal;
 }
 
-.contact__flex .contact__address .contact__address--place span {
+.contact__wrapper .contact__address .contact__address--place span {
   font-weight: bold;
   display: block;
   font-size: 1.8rem;
   padding: 3rem;
 }
 
-.contact__flex iframe {
+.contact__wrapper iframe {
   width: 100%;
   height: 50rem;
   padding: 2rem;
@@ -833,4 +842,43 @@ header .logo .box__hidden {
   text-transform: none;
   display: inline-block;
   line-height: 2rem;
+}
+
+.contact__form {
+  padding-bottom: 10rem;
+}
+
+.contact__form h4 {
+  color: #1f2c50;
+  font-size: 3rem;
+  padding: 6rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  width: 100%;
+}
+
+.contact__form form {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  color: #1f2c50;
+  font-size: 3rem;
+  padding: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-transform: none;
+  background-color: rgba(220, 220, 220, 0.474);
+}
+
+.contact__form form input {
+  height: 4rem;
+}
+
+.contact__form form textarea {
+  height: 20rem;
 }
