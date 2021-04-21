@@ -4,7 +4,7 @@
     padding: 0;
     font-size: 62.5%;
     font-family: "Montserrat", sans-serif;
-    //border: red 1px solid;
+    // border: red 1px solid;
 }
 
 // .....CENTRER ELEMENTS.......
@@ -203,7 +203,7 @@ header {
 
 .play {
     background-color: darken($darkBlue, $amount: 5%);
-    opacity: 0.995;
+    opacity: 0.99;
     min-height: 55vh;
     padding-bottom: 5rem;
     .play__heading {
@@ -471,6 +471,38 @@ header {
     }
 }
 
+//...................RESPONSIVE < 340 px .........................
+
+@media screen and(max-width: 340px) {
+    .event__article {
+        .event__article--heading {
+            font-size: 1rem;
+        }
+        .event__article--place {
+            font-size: 0.8rem;
+        }
+        .event__article--description {
+            font-size: 0.9rem;
+        }
+        .event__article--button {
+            padding: 0;
+            margin-top: 2rem;
+        }
+    }
+    html {
+        font-size: 45%;
+        header {
+            height: 7rem;
+        }
+        .banniere .banniere__heading {
+            font-size: 4rem;
+        }
+        .event__article .event__article--button {
+            padding: 0;
+        }
+    }
+}
+
 // ...................EVENEMENTS.HTML............................................................
 
 .banniere .banniere__heading--orange {
@@ -575,20 +607,70 @@ header {
     }
 }
 
-@media screen and(max-width: 340px) {
-    .event__article {
-        .event__article--heading {
-            font-size: 1rem;
+//......................CONTACT.HTML..........................................
+
+.contact__flex {
+    display: flex;
+    justify-content: space-between;
+    min-height: 30vh;
+    margin: 10rem auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px rgb(202, 202, 202);
+    padding: 1rem;
+    .contact__address {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(223, 223, 223, 0.323);
+        padding: 2rem;
+        margin: 2rem;
+        flex: 1.5;
+        .contact__address--title {
+            @include heading__mixin($darkBlue, 2rem, 2rem);
         }
-        .event__article--place {
-            font-size: 0.8rem;
+        .contact__address--place {
+            @include heading__mixin($darkBlue, 1.5rem, 2rem);
+            margin-top: -4rem;
+            text-transform: none;
+            font-weight: normal;
+            span {
+                font-weight: bold;
+                display: block;
+                font-size: 1.8rem;
+                padding: 3rem;
+            }
         }
-        .event__article--description {
-            font-size: 0.9rem;
+    }
+    iframe {
+        width: 100%;
+        height: 50rem;
+        padding: 2rem;
+        flex: 2.5;
+        border: none;
+    }
+}
+.phone__mail__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    .phone__mail__item {
+        margin: 0.5rem;
+        display: flex;
+        align-items: center;
+        svg {
+            color: $darkBlue;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
         }
-        .event__article--button {
-            padding: 0;
-            margin-top: 2rem;
+        .address--phone--mail {
+            @include heading__mixin($darkBlue, 1.2rem, 0rem);
+            text-transform: none;
+            display: inline-block;
+            line-height: 2rem;
         }
     }
 }
