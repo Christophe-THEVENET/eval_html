@@ -130,7 +130,7 @@ header {
     height: 100vh;
     @extend %flex-centered;
     flex-direction: column;
-    .banniere__heading {
+    &__heading {
         width: auto;
         max-width: 80%;
         margin-top: 20%;
@@ -145,7 +145,7 @@ header {
         @extend %flex-centered;
         text-shadow: $title-shadow;
     }
-    .banniere__arrow {
+    &__arrow {
         display: block;
         width: 15rem;
         height: 15rem;
@@ -161,7 +161,7 @@ header {
     background-color: #ffffff;
     @extend %flex-centered;
     flex-direction: column;
-    .about__img {
+    &__img {
         background-image: url("../img/20-ans-3.jpg");
         background-size: cover;
         width: 27rem;
@@ -171,7 +171,7 @@ header {
         @extend %flex-centered;
         z-index: 2;
     }
-    .about__heading {
+    &__heading {
         width: 18rem;
         height: 18rem;
         background-color: #1f2c50e5;
@@ -184,7 +184,7 @@ header {
         text-align: center;
         letter-spacing: 0.2rem;
     }
-    .about__paragraph {
+    &__paragraph {
         font-size: 1.5rem;
         // width: 120%;
         padding: 1rem;
@@ -192,7 +192,7 @@ header {
         text-align: justify;
         color: $darkBlue;
     }
-    .about__button {
+    &__button {
         @include button();
         margin: 0;
     }
@@ -205,14 +205,14 @@ header {
     opacity: 0.99;
     min-height: 55vh;
     padding-bottom: 5rem;
-    .play__heading {
+    &__heading {
         @include heading__mixin(white, 3.5rem, 5rem);
         margin-top: 3rem;
     }
     h3 {
         @include heading__mixin(white, 1.7rem, 3rem);
     }
-    .play__icons {
+    &__icons {
         @include round_icons();
     }
 }
@@ -223,10 +223,10 @@ header {
     background-color: #ffffff;
     padding-top: 5rem;
     @extend %flex-centered;
-    .news__heading {
+    &__heading {
         @include heading__mixin($darkBlue, 3.5rem, 2rem);
     }
-    .news__link {
+    &__link {
         color: $darkBlue;
         font-size: 1.8rem;
         font-weight: bold;
@@ -245,7 +245,7 @@ header {
             transform: scale(1.01);
             box-shadow: 2px 2px 15px -2px rgb(153, 153, 153);
         }
-        .card-tittle {
+        &-tittle {
             @include heading__mixin($orange, 1.8rem, 0rem);
             padding-top: 2rem;
         }
@@ -255,13 +255,13 @@ header {
             color: $darkBlue;
             padding: 2rem;
         }
-        .card__date {
+        &__date {
             text-align: center;
             color: rgb(134, 199, 230);
             margin: 0;
             padding: 0;
         }
-        .card__button {
+        &__button {
             @include button();
         }
     }
@@ -275,16 +275,16 @@ header {
     background-color: darken($yellow, $amount: 5%);
     @extend %flex-centered;
     opacity: 0.95;
-    .number__heading {
+    &__heading {
         @include heading__mixin($darkBlue, 3.5rem, auto);
     }
-    .number__block {
+    &__block {
         @extend %flex-centered;
         flex-direction: column;
         justify-content: flex-start;
         margin: 0.5rem;
         height: 45rem;
-        .number__icons {
+        &__icons {
             height: 10rem;
             width: 10rem;
             transition: all 1s ease-in-out 0s;
@@ -292,10 +292,10 @@ header {
                 transform: scale(1.2);
             }
         }
-        .number__title {
+        &__title {
             @include heading__mixin($darkBlue, 3rem, 2rem);
         }
-        .number__paragraph {
+        &__paragraph {
             color: $darkBlue;
             font-size: 1.5rem;
             text-align: center;
@@ -309,7 +309,7 @@ header {
 .footer {
     background-color: white;
     padding: 5rem 1rem;
-    .footer__block {
+    &__block {
         @extend %flex-centered;
         padding: 2rem;
         .footer__block__img {

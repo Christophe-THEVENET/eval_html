@@ -1,0 +1,19 @@
+{
+    "name": "ee_html",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./css/style.scss:./css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Christophe-THEVENET/eval_html.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Christophe-THEVENET/eval_html/issues"
+    },
+    "homepage": "https://github.com/Christophe-THEVENET/eval_html#readme"
+}
