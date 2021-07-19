@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 // ........CENTRER ELEMENTS.........
@@ -162,7 +162,7 @@ header {
     @extend %flex-centered;
     flex-direction: column;
     &__img {
-        background-image: url("../img/20-ans-3.jpg");
+        background-image: url('../img/20-ans-3.jpg');
         background-size: cover;
         width: 27rem;
         padding: 1rem;
@@ -278,13 +278,13 @@ header {
     &__heading {
         @include heading__mixin($darkBlue, 3.5rem, auto);
     }
-    &__block {
+    & .number__block {
         @extend %flex-centered;
         flex-direction: column;
         justify-content: flex-start;
         margin: 0.5rem;
         height: 45rem;
-        &__icons {
+        & .number__icons {
             height: 10rem;
             width: 10rem;
             transition: all 1s ease-in-out 0s;
@@ -292,10 +292,10 @@ header {
                 transform: scale(1.2);
             }
         }
-        &__title {
+        & .number__title {
             @include heading__mixin($darkBlue, 3rem, 2rem);
         }
-        &__paragraph {
+        & .number__paragraph {
             color: $darkBlue;
             font-size: 1.5rem;
             text-align: center;
@@ -403,7 +403,7 @@ header {
         color: $darkBlue;
     }
     .nav-link:after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         bottom: 0;

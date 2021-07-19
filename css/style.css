@@ -6,7 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.footer__block, .number__block, .number, .news, .about__img, .about, .banniere__heading, .banniere {
+.footer__block, .number .number__block, .number, .news, .about__img, .about, .banniere__heading, .banniere {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,21 +257,21 @@ header .logo .box__hidden {
   text-align: center;
   text-transform: uppercase;
 }
-.number__block {
+.number .number__block {
   flex-direction: column;
   justify-content: flex-start;
   margin: 0.5rem;
   height: 45rem;
 }
-.number__block__icons {
+.number .number__block .number__icons {
   height: 10rem;
   width: 10rem;
   transition: all 1s ease-in-out 0s;
 }
-.number__block__icons:hover {
+.number .number__block .number__icons:hover {
   transform: scale(1.2);
 }
-.number__block__title {
+.number .number__block .number__title {
   color: #1f2c50;
   font-size: 3rem;
   padding: 2rem;
@@ -279,7 +279,7 @@ header .logo .box__hidden {
   text-align: center;
   text-transform: uppercase;
 }
-.number__block__paragraph {
+.number .number__block .number__paragraph {
   color: #1f2c50;
   font-size: 1.5rem;
   text-align: center;
